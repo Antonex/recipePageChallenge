@@ -1,0 +1,224 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Stone-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 3rem;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 85%;
+  max-width: 40rem;
+  max-height: auto;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.container .recipe_name {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.container .recipe_desc {
+  font-family: "Outfit", serif;
+  font-weight: 500;
+  color: var(--Stone-600);
+  margin: 1.5rem 0 1.5rem 0;
+  font-size: 14px;
+}
+
+.container .preparation_time {
+  background-color: var(--Rose-50);
+  width: 100%;
+  height: auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 0 0 2.5rem 0;
+}
+
+.container .preparation_time > h2 {
+  font-family: "Outfit", serif;
+  font-weight: 700;
+  color: var(--Rose-800);
+  margin: 0 0 2rem 0;
+}
+
+.container .preparation_time ul {
+  margin: 0 0 0 2rem;
+}
+
+.container .preparation_time ul li span {
+  font-family: "Outfit", serif;
+  font-weight: 600;
+  color: var(--Stone-600);
+  margin: 0 0 0 1rem;
+  line-height: 1.5rem;
+}
+
+.container .preparation_time ul li {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  color: var(--Stone-600);
+}
+
+.container .preparation_time ul li::marker {
+  color: var(--Rose-800);
+}
+
+.container .ingredients > h2 {
+  font-family: "Young serif", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--Brown-800);
+  margin: 0 0 1rem 0;
+}
+
+.container .ingredients > ul {
+  margin: 0 0 2rem 1.5rem;
+}
+
+.container .ingredients > ul li::marker {
+  color: var(--Brown-800);
+}
+
+.container .ingredients > ul li {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  color: var(--Stone-600);
+  margin: 0 0 1rem 0;
+  padding: 0 0 0 1.5rem;
+}
+
+.container .instructions {
+  width: 100%;
+  margin: 2rem 0 2rem 0;
+}
+
+.container .instructions > h2 {
+  font-family: "Young serif", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--Brown-800);
+  margin: 0 0 1rem 0;
+}
+
+.container .instructions ol {
+  margin: 0 0 0 1.5rem;
+}
+
+.container .instructions ol li span {
+  font-family: "Outfit", serif;
+  font-weight: 700;
+  color: var(--Stone-600);
+  padding: 0 0.5rem 0 0;
+}
+
+.container .instructions ol li::marker {
+  color: var(--Brown-800);
+  font-weight: 600;
+}
+
+.container .instructions ol li {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  color: var(--Stone-600);
+  margin: 0 0 1rem 0;
+  padding: 0 0 0 1.5rem;
+}
+
+.container .nutrition {
+  width: 100%;
+  margin: 2rem 0 0 0;
+}
+
+.container .nutrition > h2 {
+  font-family: "Young serif", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--Brown-800);
+  margin: 0 0 1rem 0;
+}
+
+.container .nutrition > p {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  color: var(--Stone-600);
+  margin: 0 0 1rem 0;
+}
+
+.container .nutrition table {
+  width: 100%;
+}
+
+/* for merging two borders together */
+.container .nutrition table {
+  border-collapse: collapse;
+}
+
+.container .nutrition table td {
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+/* for targetting the table information to style them seperately */
+.container .nutrition table td:nth-child(1) {
+  font-family: "Outfit", serif;
+  font-weight: 400;
+  color: var(--Stone-600);
+  padding: 1rem 2rem;
+}
+
+.container .nutrition table td:nth-child(2) {
+  font-family: "Outfit", serif;
+  font-weight: 700;
+  color: var(--Brown-800);
+  padding-right: 6rem;
+}
+
+.container .nutrition table .no_border {
+  border: none;
+}
+
+hr {
+  border: 1px solid var(--Stone-150);
+}
+
+.attribution {
+  margin: 1rem 0 0 0;  
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Outfit", serif;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'Young Serif', serif;
+}
